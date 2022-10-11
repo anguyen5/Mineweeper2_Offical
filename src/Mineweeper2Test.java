@@ -15,11 +15,6 @@ import static org.junit.Assert.assertArrayEquals;
 
 class Mineweeper2Test {
 
-    @Test
-    void main_test() throws IOException {
-
-
-    }
 
     //print2D_test01 print converted matrix 4x3
     @Test
@@ -328,25 +323,6 @@ class Mineweeper2Test {
         //System.out.println("matrix expected: ");
         //mines.print2D(expected);
         assertArrayEquals(expected,mines.translateMatrix(matrix));
-    }
-
-    @Test
-    void outputFile_test() throws FileNotFoundException {
-
-     /*   try {
-            Mineweeper2 mines = new Mineweeper2();
-            //String inputFile = Files.readString(Paths.get("test_input.txt"), StandardCharsets.UTF_8);
-
-            String content1 = Files.readString(Paths.get("test_output.txt"), StandardCharsets.UTF_8);
-            String content2_expected = Files.readString(Paths.get("minesweeper_output.txt"), StandardCharsets.UTF_8);
-
-            //assertArrayEquals(content2_expected,mines.outputFile(content1));
-            //assertArrayEquals(content1.toCharArray(), content2.toCharArray());
-        }
-        catch (IOException e){
-
-        }
-*/
     }
 
 
